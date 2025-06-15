@@ -15,3 +15,5 @@ django-ratelimit
 django-axes
 pymemcache
 pyOpenSSL
+Pillow
+Pillow>=9.0
