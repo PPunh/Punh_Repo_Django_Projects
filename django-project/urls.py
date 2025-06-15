@@ -16,6 +16,8 @@ Including another URLconf
 """
 # django core libs
 from django.contrib import admin
+from django.conf.urls.static import static
+from django.conf import settings
 from django.urls import path, include
 
 # 3rd party libs
@@ -38,3 +40,4 @@ urlpatterns = [
 '''
     path('new_app/', include('apps.app_lable.urls', namespace='app_lable')),
 '''
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
