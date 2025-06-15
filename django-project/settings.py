@@ -51,7 +51,6 @@ INSTALLED_APPS = [
     # custom apps
     # usage: apps.app_name
     'apps.users', # custom users app, extending the default built-in Django Auth
-    'apps.agents',
 ]
 
 AUTH_USER_MODEL = 'users.User'
